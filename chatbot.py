@@ -8,7 +8,7 @@ from langchain_community.chat_models import ChatOpenAI
 
 # from langchain.llms import OpenAI
 
-
+OPEN_AI_KEY = "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"
 
 #Upload pdf files
 
@@ -36,7 +36,7 @@ if uploaded_file is not None:
     # st.write(chunks)
     
     #generating embedding
-    embeddings = OpenAIEmbeddings(openai_api_key= OPEN_AI_STRING)
+    embeddings = OpenAIEmbeddings(openai_api_key= OPEN_AI_KEY)
     
     #create vector store- FAISS
     vector_store = FAISS.from_texts(
@@ -54,7 +54,7 @@ if uploaded_file is not None:
         
         #define LLM
         llm = ChatOpenAI(
-            openpi_api_key = OPEN_AI_STRING,
+            openpi_api_key = OPEN_AI_KEY,
             temperature=0,
             max_tokens=1000,
             model_name= "gpt-3.5-turbo"

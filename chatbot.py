@@ -8,7 +8,7 @@ from langchain_community.chat_models import ChatOpenAI
 
 # from langchain.llms import OpenAI
 
-OPEN_AI_KEY = "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"
+# OPEN_AI_KEY = "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"
 
 #Upload pdf files
 

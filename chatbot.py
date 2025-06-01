@@ -8,7 +8,7 @@ from langchain_community.chat_models import ChatOpenAI
 
 # from langchain.llms import OpenAI
 
- OPEN_AI_STRING = "Framework_STRING"
+#  OPEN_AI_STRING = "Framework_STRING"
 
 #Upload pdf files
 
